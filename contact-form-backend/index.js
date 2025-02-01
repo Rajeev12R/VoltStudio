@@ -22,6 +22,15 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+transporter.verify((error, success) => {
+  if (error) {
+    console.error("Nodemailer error:", error);
+  } else {
+    console.log("Server is ready to take messages");
+  }
+});
+
+
 // POST route for handling contact form submission
 app.post('/send', (req, res) => {
   const { firstName, lastName, email, company, website, message, newsletter } = req.body;
