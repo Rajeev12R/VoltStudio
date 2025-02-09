@@ -15,7 +15,7 @@ const Footer = () => {
               VOLT STUDIO
             </Link>
             <p className="mt-4 text-gray-400 max-w-md">
-              Transforming products into powerful stories and go-to-market strategies that sell.
+              Transforming loose ends into a powerful brand stories that resonate with your audience.
             </p>
             <div className="flex space-x-4 mt-6">
               <a to="#" className="text-gray-400 hover:text-green-500 transition-colors">

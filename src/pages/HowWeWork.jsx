@@ -103,7 +103,7 @@ const HowWeWork = () => {
               <h1 className="text-5xl sm:text-6xl font-bold mb-8">How We Work</h1>
               <p className="text-2xl font-light mb-8">We're more than an agency. We're your partner.</p>
               <p className="text-lg text-gray-400 mb-8">
-                We've worked with dozens of companies as true strategic partners to position and launch products and
+                We've worked with a bunch of companies as true strategic team to position and grow 
                 brands, manage cross-functional teams, and keep things aligned and on track.
               </p>
             </motion.div>

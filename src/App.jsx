@@ -5,7 +5,7 @@ import Hero from "./components/Hero"
 import Services from "./components/Services"
 import CaseStudies from "./components/CaseStudies"
 import CallToAction from "./components/CallToAction"
-import Stats from "./components/Stats"
+// import Stats from "./components/Stats"
 import Footer from "./components/Footer"
 import ServicesPage from "./pages/Services"
 import PortfolioPage from "./pages/Portfolio"
@@ -24,7 +24,7 @@ const App = () => {
             element={
               <>
                 <Hero />
-                <Stats/>
+                {/* <Stats/> */}
                 <Services />
                 <CaseStudies />
                 <CallToAction />

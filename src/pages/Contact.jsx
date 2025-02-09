@@ -26,7 +26,7 @@ const Contact = () => {
     e.preventDefault();
   
     try {
-      const response = await fetch("http://localhost:3000/send", {
+      const response = await fetch("http://volt-studio-etsi/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

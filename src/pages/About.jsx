@@ -48,7 +48,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
             <h1 className="text-5xl sm:text-6xl font-bold text-white mb-2 leading-tight">
-              We're a seasoned collective of digital innovators
+            We are a visionary squad of digital Innovators.
             </h1>
           </motion.div>
           <motion.div
@@ -68,14 +68,10 @@ const About = () => {
           <div className="text-white">
             <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
             <p className="text-gray-400 text-lg mb-6">
-              At Volt Studio, our mission is to empower businesses with cutting-edge digital solutions that drive
-              growth, engagement, and success. We believe in the power of creativity, technology, and strategic thinking
-              to transform brands and connect them with their audience in meaningful ways.
+            At Paperclip, we don’t just create digital marketing strategies—we craft experiences. We believe that every brand, big or small, deserves to stand out and leave a lasting impact in the digital world. We’re a team of passionate marketers, innovators, and storytellers who specialize in taking your vision and turning it into a digital presence that speaks for itself.
             </p>
             <p className="text-gray-400 text-lg">
-              We strive to be at the forefront of digital innovation, constantly evolving our skills and approaches to
-              deliver exceptional results for our clients. Our commitment to excellence, integrity, and client
-              satisfaction is at the heart of everything we do.
+            Our team is passionate about staying ahead of the curve, always learning, and adapting to bring fresh, innovative ideas to the table. What drives us is a deep commitment to delivering results that truly matter for our clients—while staying honest, transparent, and focused on their success every step of the way.
             </p>
             <Link
               to="/contact"
@@ -87,13 +83,13 @@ const About = () => {
           <div className="flex flex-col items-center justify-center text-white space-y-8">
             <div>
               <p className="text-gray-400 text-lg">
-                In 2023, we launched <span className="text-emerald-400">Volt</span>, our self-serve marketing
+                In 2023, we launched <span className="text-emerald-400">PaperClip</span>, our self-serve marketing
                 agency for small businesses.
               </p>
             </div>
             <div>
               <p className="text-gray-400 text-lg">
-                In 2024, we introduced <span className="text-emerald-400">Volt Connect</span> to help cafés,
+                In 2024, we introduced <span className="text-emerald-400">PaperClip Connect</span> to help cafés,
                 international schools, and other businesses find expert marketing consultants.
               </p>
             </div>

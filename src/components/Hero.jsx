@@ -16,14 +16,14 @@ const Hero = () => {
           className="text-center"
         >
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
-            Elevate Your Brand with
+            Clipping your dreams of 
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-              Cutting-Edge Digital Solutions
-            </span>
+            <span className="">Digital Success with <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+              PaperClip.
+            </span></span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-            From stunning visuals to strategic marketing, we're your one-stop shop for all things digital. Let's create
+          Turning digital clutter into seamless strategy - just like a paperclip, keeping things neat and effective! <br />Let's create
             something extraordinary together.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">

@@ -16,13 +16,13 @@ const GlowingBackground = () => {
     const createGlowingDot = () => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
-      radius: Math.random() * 3 + 1,
-      vx: Math.random() * 3 - 1,
-      vy: Math.random() * 3 - 1,
+      radius: Math.random() * 5 + 1,
+      vx: Math.random() * 5 - 1,
+      vy: Math.random() * 5 - 1,
       life: Math.random() * 100 + 100,
     })
 
-    const dots = Array(50).fill().map(createGlowingDot)
+    const dots = Array(70).fill().map(createGlowingDot)
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height)

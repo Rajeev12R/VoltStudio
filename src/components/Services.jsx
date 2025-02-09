@@ -19,31 +19,31 @@ const Services = () => {
     {
       icon: Video,
       title: "Video Editing",
-      description: "Transform raw footage into captivating stories that resonate with your audience.",
+      description: "Video editing isn't just about cropping clips- It's about storytelling.",
       link: "/services/video-editing",
     },
     {
       icon: Paintbrush,
       title: "Graphics Design",
-      description: "Create stunning visuals that elevate your brand and leave a lasting impression.",
+      description: "Create designs that graphically inclines with your ideas",
       link: "/services/graphics-design",
     },
     {
       icon: Globe,
       title: "Web Development",
-      description: "Build responsive, user-friendly websites that drive engagement and conversions.",
+      description: "Develop websites that are fast, intuitive, and designed for success.",
       link: "/services/web-development",
     },
     {
       icon: Search,
       title: "SEO",
-      description: "Boost your online visibility and drive organic traffic to your website.",
+      description: "Your brand deserves the spotlight! We turn whispers into roars with SEO that dominates.",
       link: "/services/seo",
     },
     {
       icon: Briefcase,
       title: "Branding",
-      description: "Develop a strong, cohesive brand identity that sets you apart from the competition.",
+      description: "Build a brand that turns heads, builds recognition, and stands out in any market.",
       link: "/services/branding",
     },
     {
@@ -55,7 +55,7 @@ const Services = () => {
     {
       icon: MessageSquare,
       title: "Social Media Management",
-      description: "Engage your audience and grow your brand across all major social platforms.",
+      description: "Turn followers into fans and grow your brand with strategic social media engagement.",
       link: "/services/social-media",
     },
   ]
