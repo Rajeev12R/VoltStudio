@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link to="/" className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-2xl font-bold">
-              PAPERCLIP
+              WIDE TAKE
             </Link>
           </div>
 

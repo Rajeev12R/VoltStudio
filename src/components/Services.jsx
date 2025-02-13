@@ -9,7 +9,7 @@ const ServiceCard = ({ icon: Icon, title, description, link }) => (
     <h3 className="text-2xl font-bold text-gray-900 mb-4">{title}</h3>
     <p className="text-gray-600 mb-6">{description}</p>
     <Link to={link} className="text-purple-600 font-medium hover:text-purple-800 transition-colors">
-      Learn More &rarr;
+      Know More &rarr;
     </Link>
   </motion.div>
 )

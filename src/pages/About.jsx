@@ -68,7 +68,7 @@ const About = () => {
           <div className="text-white">
             <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
             <p className="text-gray-400 text-lg mb-6">
-            At Paperclip, we don’t just create digital marketing strategies—we craft experiences. We believe that every brand, big or small, deserves to stand out and leave a lasting impact in the digital world. We’re a team of passionate marketers, innovators, and storytellers who specialize in taking your vision and turning it into a digital presence that speaks for itself.
+            At WIDE TAKE, we don’t just create digital marketing strategies—we craft experiences. We believe that every brand, big or small, deserves to stand out and leave a lasting impact in the digital world. We’re a team of passionate marketers, innovators, and storytellers who specialize in taking your vision and turning it into a digital presence that speaks for itself.
             </p>
             <p className="text-gray-400 text-lg">
             Our team is passionate about staying ahead of the curve, always learning, and adapting to bring fresh, innovative ideas to the table. What drives us is a deep commitment to delivering results that truly matter for our clients—while staying honest, transparent, and focused on their success every step of the way.
@@ -83,13 +83,13 @@ const About = () => {
           <div className="flex flex-col items-center justify-center text-white space-y-8">
             <div>
               <p className="text-gray-400 text-lg">
-                In 2023, we launched <span className="text-emerald-400">PaperClip</span>, our self-serve marketing
+                In 2023, we launched <span className="text-emerald-400">WIDE TAKE</span>, our self-serve marketing
                 agency for small businesses.
               </p>
             </div>
             <div>
               <p className="text-gray-400 text-lg">
-                In 2024, we introduced <span className="text-emerald-400">PaperClip Connect</span> to help cafés,
+                In 2024, we introduced <span className="text-emerald-400">WIDE TAKE Connect</span> to help cafés,
                 international schools, and other businesses find expert marketing consultants.
               </p>
             </div>
