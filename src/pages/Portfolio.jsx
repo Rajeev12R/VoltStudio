@@ -35,7 +35,7 @@ const LogoScroll = () => {
 const ImageSlider = ({ images, videos }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const items = [...images, ...videos];
+  const items = [...videos, ...images];
   const timerRef = useRef(null);
 
   const goToSlide = (index) => {
@@ -94,17 +94,17 @@ const ImageSlider = ({ images, videos }) => {
           animate={{ opacity: index === currentIndex ? 1 : 0 }}
           transition={{ duration: 0.5 }}
         >
-          {index < images.length ? (
-            <img src={item || "/placeholder.svg"} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" />
-          ) : (
+          {index < videos.length ? (
             <video
-              src={item}
-              className="w-full h-full object-cover"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
+            src={item}
+            className="w-full h-full object-contain object-center"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+          ) : (
+            <img src={item || "/placeholder.svg"} alt={`Slide ${index + 1}`} className="w-full h-full object-contain object-center" />
           )}
         </motion.div>
       ))}
@@ -175,60 +175,86 @@ const CaseStudy = () => {
           category: "INTERNATIONAL SCHOOL",
           description: "Logo Designing • Content Writing • Social Media Management • Branding • Post Creation • Taglines",
           images: [
-            "https://images.unsplash.com/photo-1542435503-956c469947f6?w=800&auto=format&fit=crop&q=60",
-            "https://images.unsplash.com/photo-1542435503-956c469947f6?w=800&auto=format&fit=crop&q=60",
+            "src/assets/school_assets/1.jpeg",
+            "src/assets/school_assets/2.jpeg",
+            "src/assets/school_assets/3.jpeg",
+            "src/assets/school_assets/4.jpeg",
+            "src/assets/school_assets/5.jpeg",
+            "src/assets/school_assets/6.jpeg",
+            "src/assets/school_assets/7.jpeg",
+            "src/assets/school_assets/8.jpeg",
+            "src/assets/school_assets/9.jpeg",
+            "src/assets/school_assets/10.jpeg",
+            
           ],
-          videos: ["https://www.w3schools.com/html/mov_bbb.mp4"],
+          videos: [],
         },
         {
           title: "Sunny side up",
           category: "RESTAURANT AND FINE DINING",
           description: "Video Editing • Video Shoots",
           images: [
-            "https://images.unsplash.com/photo-1542435503-956c469947f6?w=800&auto=format&fit=crop&q=60",
-            "https://images.unsplash.com/photo-1542435503-956c469947f6?w=800&auto=format&fit=crop&q=60",
+            "src/assets/sunny_assets/2.jpg",
+            "src/assets/sunny_assets/3.jpg",
+            "src/assets/sunny_assets/4.jpg",
+            "src/assets/sunny_assets/5.jpg",
+            
           ],
-          videos: ["https://www.w3schools.com/html/mov_bbb.mp4"],
-        },
-        {
-          title: "Satva",
-          category: "BAR & LOUNGE",
-          description: "Video Editing • Video Shoots",
-          images: [
-            "https://images.unsplash.com/photo-1542435503-956c469947f6?w=800&auto=format&fit=crop&q=60",
-            "https://images.unsplash.com/photo-1542435503-956c469947f6?w=800&auto=format&fit=crop&q=60",
-          ],
-          videos: ["https://www.w3schools.com/html/mov_bbb.mp4"],
+          videos: ["src/assets/sunny_assets/1.mp4"],
         },
         {
           title: "GupShup @ chhat",
           category: "ROOFTOP DINING",
           description: "Video Editing • Video Shoots",
           images: [
-            "https://images.unsplash.com/photo-1542435503-956c469947f6?w=800&auto=format&fit=crop&q=60",
-            "https://images.unsplash.com/photo-1542435503-956c469947f6?w=800&auto=format&fit=crop&q=60",
+            "src/assets/gupshup_assets/2.jpg",
+            "src/assets/gupshup_assets/3.jpg",
+            "src/assets/gupshup_assets/4.jpg",
+            "src/assets/gupshup_assets/5.jpg",
+            "src/assets/gupshup_assets/6.jpg",
+            "src/assets/gupshup_assets/7.jpg",
           ],
-          videos: ["https://www.w3schools.com/html/mov_bbb.mp4"],
+          videos: ["src/assets/gupshup_assets/1.mp4"],
         },
         {
           title: "Retro",
           category: "CAFE VENTURE",
           description: "Video Editing • Video Shoots • Post Creation • Graphics Designing",
           images: [
-            "https://images.unsplash.com/photo-1542435503-956c469947f6?w=800&auto=format&fit=crop&q=60",
-            "https://images.unsplash.com/photo-1542435503-956c469947f6?w=800&auto=format&fit=crop&q=60",
+            "src/assets/retro_assets/5.jpg",
+            "src/assets/retro_assets/1.jpg",
+            "src/assets/retro_assets/2.jpg",
+            "src/assets/retro_assets/3.jpg",
+            "src/assets/retro_assets/4.jpg",
+            "src/assets/retro_assets/6.jpg",
           ],
-          videos: ["https://www.w3schools.com/html/mov_bbb.mp4"],
+          videos: ["src/assets/retro_assets/1.mp4"],
         },
         {
           title: "Retro Mini",
           category: "MINI CAFE",
           description: "Video Editing • Video Shoots • Post Creation • Graphics Designing",
           images: [
-            "https://images.unsplash.com/photo-1542435503-956c469947f6?w=800&auto=format&fit=crop&q=60",
-            "https://images.unsplash.com/photo-1542435503-956c469947f6?w=800&auto=format&fit=crop&q=60",
+            "src/assets/retromini_assets/2.jpg",
+            "src/assets/retromini_assets/3.png",
+            "src/assets/retromini_assets/4.png",
+            "src/assets/retromini_assets/5.png",
+            "src/assets/retromini_assets/6.png",
+            "src/assets/retromini_assets/7.png",
           ],
-          videos: ["https://www.w3schools.com/html/mov_bbb.mp4"],
+          videos: ["src/assets/retromini_assets/1.mp4"],
+        },
+        {
+          title: "Satva",
+          category: "BAR & LOUNGE",
+          description: "Video Editing • Video Shoots",
+          images: [
+            "src/assets/satva_assets/1.jpg",
+            "src/assets/satva_assets/2.jpg",
+            "src/assets/satva_assets/3.jpg",
+            "src/assets/satva_assets/4.jpg",
+          ],
+          videos: [],
         },
       ].map((study, index) => (
         <React.Fragment key={index}>
