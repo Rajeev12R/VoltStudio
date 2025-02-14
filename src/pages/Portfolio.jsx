@@ -5,6 +5,53 @@ import { Link } from "react-router-dom";
 import GlowingBackground from "../components/GlowingBackground";
 import sparshworldschool from "../assets/school.png";
 
+// Import all images and videos for the slideshow
+import schoolImage1 from "../assets/school_assets/1.jpeg";
+import schoolImage2 from "../assets/school_assets/2.jpeg";
+import schoolImage3 from "../assets/school_assets/3.jpeg";
+import schoolImage4 from "../assets/school_assets/4.jpeg";
+import schoolImage5 from "../assets/school_assets/5.jpeg";
+import schoolImage6 from "../assets/school_assets/6.jpeg";
+import schoolImage7 from "../assets/school_assets/7.jpeg";
+import schoolImage8 from "../assets/school_assets/8.jpeg";
+import schoolImage9 from "../assets/school_assets/9.jpeg";
+import schoolImage10 from "../assets/school_assets/10.jpeg";
+
+import sunnyImage2 from "../assets/sunny_assets/2.jpg";
+import sunnyImage3 from "../assets/sunny_assets/3.jpg";
+import sunnyImage4 from "../assets/sunny_assets/4.jpg";
+import sunnyImage5 from "../assets/sunny_assets/5.jpg";
+import sunnyVideo1 from "../assets/sunny_assets/1.mp4";
+
+import gupshupImage2 from "../assets/gupshup_assets/2.jpg";
+import gupshupImage3 from "../assets/gupshup_assets/3.jpg";
+import gupshupImage4 from "../assets/gupshup_assets/4.jpg";
+import gupshupImage5 from "../assets/gupshup_assets/5.jpg";
+import gupshupImage6 from "../assets/gupshup_assets/6.jpg";
+import gupshupImage7 from "../assets/gupshup_assets/7.jpg";
+import gupshupVideo1 from "../assets/gupshup_assets/1.mp4";
+
+import retroImage1 from "../assets/retro_assets/1.jpg";
+import retroImage2 from "../assets/retro_assets/2.jpg";
+import retroImage3 from "../assets/retro_assets/3.jpg";
+import retroImage4 from "../assets/retro_assets/4.jpg";
+import retroImage5 from "../assets/retro_assets/5.jpg";
+import retroImage6 from "../assets/retro_assets/6.jpg";
+import retroVideo1 from "../assets/retro_assets/1.mp4";
+
+import retroMiniImage2 from "../assets/retromini_assets/2.jpg";
+import retroMiniImage3 from "../assets/retromini_assets/3.png";
+import retroMiniImage4 from "../assets/retromini_assets/4.png";
+import retroMiniImage5 from "../assets/retromini_assets/5.png";
+import retroMiniImage6 from "../assets/retromini_assets/6.png";
+import retroMiniImage7 from "../assets/retromini_assets/7.png";
+import retroMiniVideo1 from "../assets/retromini_assets/1.mp4";
+
+import satvaImage1 from "../assets/satva_assets/1.jpg";
+import satvaImage2 from "../assets/satva_assets/2.jpg";
+import satvaImage3 from "../assets/satva_assets/3.jpg";
+import satvaImage4 from "../assets/satva_assets/4.jpg";
+
 const LogoScroll = () => {
   const logos = [
     { name: "sparshworldschool", image: sparshworldschool },
@@ -14,8 +61,6 @@ const LogoScroll = () => {
     <div className="w-full overflow-hidden bg-black py-12">
       <motion.div 
         className="flex justify-center"
-        // initial={{ x: "100%" }}
-        // animate={{ x: "-100%" }}
         transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
       >
         {[...logos].map((logo, index) => (
@@ -96,13 +141,13 @@ const ImageSlider = ({ images, videos }) => {
         >
           {index < videos.length ? (
             <video
-            src={item}
-            className="w-full h-full object-contain object-center"
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
+              src={item}
+              className="w-full h-full object-contain object-center"
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
           ) : (
             <img src={item || "/placeholder.svg"} alt={`Slide ${index + 1}`} className="w-full h-full object-contain object-center" />
           )}
@@ -175,17 +220,16 @@ const CaseStudy = () => {
           category: "INTERNATIONAL SCHOOL",
           description: "Logo Designing • Content Writing • Social Media Management • Branding • Post Creation • Taglines",
           images: [
-            "src/assets/school_assets/1.jpeg",
-            "src/assets/school_assets/2.jpeg",
-            "src/assets/school_assets/3.jpeg",
-            "src/assets/school_assets/4.jpeg",
-            "src/assets/school_assets/5.jpeg",
-            "src/assets/school_assets/6.jpeg",
-            "src/assets/school_assets/7.jpeg",
-            "src/assets/school_assets/8.jpeg",
-            "src/assets/school_assets/9.jpeg",
-            "src/assets/school_assets/10.jpeg",
-            
+            schoolImage1,
+            schoolImage2,
+            schoolImage3,
+            schoolImage4,
+            schoolImage5,
+            schoolImage6,
+            schoolImage7,
+            schoolImage8,
+            schoolImage9,
+            schoolImage10,
           ],
           videos: [],
         },
@@ -194,65 +238,64 @@ const CaseStudy = () => {
           category: "RESTAURANT AND FINE DINING",
           description: "Video Editing • Video Shoots",
           images: [
-            "src/assets/sunny_assets/2.jpg",
-            "src/assets/sunny_assets/3.jpg",
-            "src/assets/sunny_assets/4.jpg",
-            "src/assets/sunny_assets/5.jpg",
-            
+            sunnyImage2,
+            sunnyImage3,
+            sunnyImage4,
+            sunnyImage5,
           ],
-          videos: ["src/assets/sunny_assets/1.mp4"],
+          videos: [sunnyVideo1],
         },
         {
           title: "GupShup @ chhat",
           category: "ROOFTOP DINING",
           description: "Video Editing • Video Shoots",
           images: [
-            "src/assets/gupshup_assets/2.jpg",
-            "src/assets/gupshup_assets/3.jpg",
-            "src/assets/gupshup_assets/4.jpg",
-            "src/assets/gupshup_assets/5.jpg",
-            "src/assets/gupshup_assets/6.jpg",
-            "src/assets/gupshup_assets/7.jpg",
+            gupshupImage2,
+            gupshupImage3,
+            gupshupImage4,
+            gupshupImage5,
+            gupshupImage6,
+            gupshupImage7,
           ],
-          videos: ["src/assets/gupshup_assets/1.mp4"],
+          videos: [gupshupVideo1],
         },
         {
           title: "Retro",
           category: "CAFE VENTURE",
           description: "Video Editing • Video Shoots • Post Creation • Graphics Designing",
           images: [
-            "src/assets/retro_assets/5.jpg",
-            "src/assets/retro_assets/1.jpg",
-            "src/assets/retro_assets/2.jpg",
-            "src/assets/retro_assets/3.jpg",
-            "src/assets/retro_assets/4.jpg",
-            "src/assets/retro_assets/6.jpg",
+            retroImage1,
+            retroImage2,
+            retroImage3,
+            retroImage4,
+            retroImage5,
+            retroImage6,
           ],
-          videos: ["src/assets/retro_assets/1.mp4"],
+          videos: [retroVideo1],
         },
         {
           title: "Retro Mini",
           category: "MINI CAFE",
           description: "Video Editing • Video Shoots • Post Creation • Graphics Designing",
           images: [
-            "src/assets/retromini_assets/2.jpg",
-            "src/assets/retromini_assets/3.png",
-            "src/assets/retromini_assets/4.png",
-            "src/assets/retromini_assets/5.png",
-            "src/assets/retromini_assets/6.png",
-            "src/assets/retromini_assets/7.png",
+            retroMiniImage2,
+            retroMiniImage3,
+            retroMiniImage4,
+            retroMiniImage5,
+            retroMiniImage6,
+            retroMiniImage7,
           ],
-          videos: ["src/assets/retromini_assets/1.mp4"],
+          videos: [retroMiniVideo1],
         },
         {
           title: "Satva",
           category: "BAR & LOUNGE",
           description: "Video Editing • Video Shoots",
           images: [
-            "src/assets/satva_assets/1.jpg",
-            "src/assets/satva_assets/2.jpg",
-            "src/assets/satva_assets/3.jpg",
-            "src/assets/satva_assets/4.jpg",
+            satvaImage1,
+            satvaImage2,
+            satvaImage3,
+            satvaImage4,
           ],
           videos: [],
         },
