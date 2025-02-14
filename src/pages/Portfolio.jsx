@@ -35,8 +35,8 @@ import retroImage1 from "../assets/retro_assets/1.jpg";
 import retroImage2 from "../assets/retro_assets/2.jpg";
 import retroImage3 from "../assets/retro_assets/3.jpg";
 import retroImage4 from "../assets/retro_assets/4.jpg";
-import retroImage5 from "../assets/retro_assets/5.jpg";
-import retroImage6 from "../assets/retro_assets/6.jpg";
+// import retroImage5 from "../assets/retro_assets/5.jpg";
+// import retroImage6 from "../assets/retro_assets/6.jpg";
 import retroVideo1 from "../assets/retro_assets/1.mp4";
 
 import retroMiniImage2 from "../assets/retromini_assets/2.jpg";
@@ -268,8 +268,6 @@ const CaseStudy = () => {
             retroImage2,
             retroImage3,
             retroImage4,
-            retroImage5,
-            retroImage6,
           ],
           videos: [retroVideo1],
         },
